@@ -1,0 +1,13 @@
+azure:
+  keyvault:
+    uri: ${KEY_VAULT_URI}
+
+server:
+  ssl:
+    key-alias: ${SERVER_SSL_CERTIFICATE_NAME}
+    key-store-type: AzureKeyVault
+    enabled: false
+
+spring:
+  application:
+    name: external-service
